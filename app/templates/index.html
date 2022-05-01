@@ -1,0 +1,14 @@
+{% extends "base.html"%} {% block body %}
+<h1>Sources</h1>
+{% for source in sources %}
+<ul>
+  {{source.name}}
+  <li>{{source.description}}</li>
+  <a href="{{source.url}}">View {{source.name}}</a>
+  <a href="/articles/{{source.id}}">Get articles</a>
+</ul>
+{% endfor %} {% endblock %} {% block header %}
+<p>Index page</p>
+{% endblock %} {% block footer %}
+<p>2020 copyright</p>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "base.html" %} {% block body %}
+<h1>news articles page</h1>
+{% for article in articles %}
+<h6>{{article.description}}</h6>
+<img src="{{article.image}}" alt="" />
+<p>{{article.time}}</p>
+{% endfor %}
+{% endblock %}
